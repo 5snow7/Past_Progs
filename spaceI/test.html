@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>an html example</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+#mon{background-color:red;}
+
+</style>
+</head>
+<body>
+<script>
+function fun1(){
+document.getElementById('jan').innerHTML='march';
+}
+function fun2(){
+document.getElementById('jan').innerHTML='january';
+}
+
+</script>
+<table>
+  <tr>
+    <th id="mon" title="who is on first">Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td id='jan'>January</td>
+    <td onclick="fun1()" ondblclick="fun2()">$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+</table>
+
+</body>
+</html>

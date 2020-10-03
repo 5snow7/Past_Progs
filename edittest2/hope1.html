@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<heading>
+<title>hope1</title>
+<script src="scr2.js"></script>
+
+
+</heading>
+<body>
+<script>
+let int1=1;let var1="";let var2="";
+function myFunction() {
+  //alert("You pressed a key inside the input field");
+  let var1=document.getElementById("demo").value;
+  var2=var2+var1;
+  document.getElementById("p1").innerHTML=int1;int1++;
+  
+  
+  if(int1>3){document.getElementById("p1").innerHTML=var2;
+}}
+</script>
+<input type="text" id="demo" onclick="myFunction()">
+<style>
+p {border-style:double;border-width:10px;width:300px;}
+#p1{border-style:groove;}
+</style>
+<h1>My First Heading</h1>
+<p id="p1">My first paragraph.hsdaflkasd;lfjl;ksdafj</p>
+<p>My second paragraph.hsdaflkasd;lfjl;ksdafj</p>
+
+</body>
+</html>

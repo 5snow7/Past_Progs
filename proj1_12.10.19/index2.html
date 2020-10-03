@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title>addingPics</title>
+<body>
+
+<p>Click the button to make a BUTTON element with text.</p>
+<div id="div1">
+<button onclick="myFunction()">Try it</button>
+</div>
+<style>
+#div1{position:absolute;left:100px;top:50px;border-style:double;
+border-color:darkblue;border-width:20px;height:500px;
+width:300px;}
+button{position:absolute;}
+body{background-color:green;}
+
+</style>
+<script>
+let j=1;
+function chg(){j=10;
+document.getElementById("div1").style.backgroundColor="rgb(200,0,0)";
+}
+let cnt=0;let btn=[];
+function myFunction() {
+  
+  btn[cnt]=document.createElement("BUTTON");
+  btn[cnt].innerHTML = "but"+j;
+let d=document.getElementById("div1");
+d.appendChild(btn[cnt]);
+  btn[cnt].style.border="double";
+  btn[cnt].style.borderColor="red";
+  btn[cnt].style.borderWidth=j+"px";
+  j=1+j;
+ //btn.style.left=j+"px";
+  let k=25*j;
+  btn[cnt].style.left="30px";
+  btn[cnt].style.top=k+"px";
+  btn[cnt].setAttribute("onclick","chg()");
+  //btn[cnt].setAttribute.onclick="chg()";
+cnt++;
+ if(cnt==4){let img1=document.createElement("IMG");
+ img1.setAttribute("src","cowpic"+cnt+".jpg");
+ d.appendChild(img1);}
+}
+</script>
+
+</body>
+</html>

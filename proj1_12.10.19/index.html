@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Proj1_12.10.19</title>
+
+     <script src="library/p5.js"></script>
+	<script src="library/p5.dom.js"></script>
+	<script src="library/p5.sound.js"></script>
+	<script src="sketch.js"></script>
+	<script src="logo.h"></script>
+        <script src="stuff.js"></script>
+ 
+
+ <link rel="stylesheet" type="text/css" href="style.css">
+	
+  </head>
+  <body >
+    <p id="xcor">xcor</p>
+    <p id="par1">checking cow pic</p>
+    <div id="div1" >
+      
+     <input type="button" id="but1" value="but1" onclick="one()">
+     <input type="button" id="but2" value="but2" onclick="two()">
+     <input type="button" id="but3" value="but3" onclick="three()">
+     <input type="button" id="but4" value="but4" onclick="four()">
+     <input type="text" id="input1" value="num of sides-but1" ondblclick="text1()">
+    <input type="text" id="input2" value="len,angle,num" ondblclick="text2()">
+    <input type="range" id="slider1" name="angle" min="0" max="180" onclick="slid1()"  >
+    </div>
+  <div id="div2" onmousemove="getX(event)">
+  <img src="cowpic2.jpg" id="img0">
+  <img src="cowpic4.jpg" id="img1">
+  <img src="cowpic5.jpg" id="img2">
+  <img src="cowpic6.jpg" id="img3">
+  </div>
+  <div id="div3">
+  <input type="button" id="butpic" value="pic" onmouseover="pic()">
+  </div>
+  <p id="testmov"> moving </p>
+  </body>
+</html>

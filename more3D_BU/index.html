@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<img src="cowpic2.jpg" width=100% height=100%>
+	<title>more3D</title>
+
+     <script src="library/p5.js"></script>
+	<script src="library/p5.dom.js"></script>
+	<script src="library/p5.sound.js"></script>
+	<script src="sketch.js"></script>
+	<script src="logo.js"></script>
+	<script src="logoXY.js"></script>
+    <script src="functions.js"></script>
+	<script src="lines.js"></script>
+	 
+	 <link rel="stylesheet" type="text/css" href="theme.css">
+
+
+
+</head>
+<body>
+
+<p id="whatisR" style="position:absolute;top:1px;left:15px;"> what is r </p>
+<p id="but1"><input type="button" value="rateMe" onclick="chgRate()"></p>
+
+<p id="par1" onmouseover="chgbk()" onmouseout="chgback()">num poly</p>
+<p id="par2">len poly</p>
+<p id="par3">num lines</p>
+<p id="par4">len lines</p>
+<p id="parImage" >test one  <input type="button" id="but2" value="origImage" onclick="chgImage()"></p>
+
+
+<input id="inp1" type="text" ondblclick="info()" value="  test">
+
+</body>
+</html>
