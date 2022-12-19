@@ -4,7 +4,7 @@ body{background-color:green;}
 border-color:Red;position:absolute;left:850px;top:50px;
 width:220px;height:250px;background-color:yellow;}
 
-#win{border-style:double;border-width:15px;
+#win{border-style:double;border-width:25px;
 border-color:Red;position:absolute;left:850px;top:350px;
 width:220px;height:150px;}
 
